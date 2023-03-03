@@ -1,0 +1,28 @@
+export const SET_ALERT = "SET_ALERT";
+export const REMOVE_ALERT = "REMOVE_ALERT";
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
+export const REGISTER_FAIL = "REGISTER_FAIL";
+export const USER_LOADED = "USER_LOADED";
+export const AUTH_ERROR = "AUTH_ERROR";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAIL = "LOGIN_FAIL";
+export const LOGOUT = "LOGOUT";
+export const PROFILE_ERROR = "PROFILE_ERROR";
+export const GET_PROFILE = "GET_PROFILE";
+export const CLEAR_PROFILE = "CLEAR_PROFILE";
+export const UPDATE_PROFILE = "UPDATE_PROFILE";
+export const ACCOUNT_DELETED = "ACCOUNT_DELETED";
+export const GET_PROFILES = "GET_PROFILES";
+
+export const GET_VEHICLES = "GET_VEHICLES";
+export const VEHICLE_ERROR = "VEHICLE_ERROR";
+export const UPDATE_FAVORITE = "UPDATE_FAVORITE";
+export const DELETE_VEHICLE = "DELETE_VEHICLE";
+export const ADD_VEHICLE = "ADD_VEHICLE";
+export const GET_VEHICLE = "GET_VEHICLE";
+
+export const GET_BOOKING = "GET_BOOKING";
+export const GET_BOOKINGS = "GET_BOOKINGS";
+export const ADD_BOOKING = "ADD_BOOKING";
+export const DELETE_BOOKING = "DELETE_BOOKING";
+export const BOOKING_ERROR = "BOOKING_ERROR";
