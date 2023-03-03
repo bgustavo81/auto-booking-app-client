@@ -9,21 +9,21 @@ import {
 
 //Get bookings by user id
 export const getBookingsByUserId = () => async dispatch => {
-    const response = await axios.get(`http://localhost:5000/api/booking/personal-bookings`);
+    const response = await axios.get(`https://booking-app-arab.onrender.com/api/booking/personal-bookings`);
   
     dispatch({ type: GET_BOOKINGS, payload: response.data });
 }
 
 //Get booked listings by user id
 export const getBookedListingsByUserId = () => async dispatch => {
-    const response = await axios.get(`http://localhost:5000/api/booking/booked-listings`);
+    const response = await axios.get(`https://booking-app-arab.onrender.com/api/booking/booked-listings`);
   
     dispatch({ type: GET_BOOKINGS, payload: response.data });
 }
 
 //Get bookings
 export const getBookingByBookingId = (booking_id) => async dispatch => {
-    const response = await axios.get(`http://localhost:5000/api/booking/${booking_id}`);
+    const response = await axios.get(`https://booking-app-arab.onrender.com/api/booking/${booking_id}`);
   
     dispatch({ type: GET_BOOKING, payload: response.data });
 }
@@ -38,7 +38,7 @@ export const createBooking = (formData, booking_info) => async (dispatch, getSta
         }
       };
     try {
-    const response = await axios.post("http://localhost:5000/api/booking", {...formData, ...user, booking_info}, config);
+    const response = await axios.post("https://booking-app-arab.onrender.com/api/booking", {...formData, ...user, booking_info}, config);
     dispatch({ type: ADD_BOOKING, payload: response.data });
     dispatch(setAlert("Booking created", "success"));
     } catch (err) {
@@ -51,7 +51,7 @@ export const createBooking = (formData, booking_info) => async (dispatch, getSta
   
 //Delete a booking
 export const deleteBooking = booking_id => async dispatch => {
-    await axios.delete(`http://localhost:5000/api/booking/${booking_id}`);
+    await axios.delete(`https://booking-app-arab.onrender.com/api/booking/${booking_id}`);
   
     dispatch({ type: DELETE_BOOKING, payload: booking_id });
     dispatch(setAlert("Booking has been deleted.", "success"));

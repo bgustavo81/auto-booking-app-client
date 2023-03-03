@@ -11,7 +11,7 @@ const Payments = ({
 
     const vehicle_id = parseInt(useParams().vehicle_id);
     const onToken = async token => {
-        const response = await axios.post("http://localhost:5000/api/booking/billing", {token, vehicle_id, price, startDate, endDate});
+        const response = await axios.post("https://booking-app-arab.onrender.com/api/booking/billing", {token, vehicle_id, price, startDate, endDate});
         navigate(`/booking/confirmation/${vehicle_id}`);
         // dispatch({ type: USER_LOADED, payload: response.data });
     };

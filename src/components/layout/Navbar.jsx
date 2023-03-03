@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { connect } from "react-redux";
-import PropTypes from "prop-types";
+import {PropTypes} from "prop-types";
 import { logout } from "../../actions/auth";
 
 
