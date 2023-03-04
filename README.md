@@ -1,5 +1,5 @@
 # auto-booking-app-client
-![This is an image](https://my-foto-bucket-123.s3.us-east-2.amazonaws.com/github/booking-app-diagram.png)
+![This is an image](https://my-foto-bucket-123.s3.us-east-2.amazonaws.com/github/auto-booking-app-diagram.png)
 
 ## Technologies used on the application:
 ### Front-End:
